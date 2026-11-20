@@ -46,8 +46,8 @@ def split_image_into_n_power4(image_name, n):
     img_path = f"X_View/datasets/data/train/images/{image_name}.png"
     lbl_path = f"X_View/datasets/data/train/labels/{image_name}.txt"
     
-    out_img_dir = "X_View/datasets/data/train/split_images"
-    out_lbl_dir = "X_View/datasets/data/train/split_labels"
+    out_img_dir = f"X_View/datasets/data/train/split_{n}_images"
+    out_lbl_dir = f"X_View/datasets/data/train/split_{n}_labels"
     os.makedirs(out_img_dir, exist_ok=True)
     os.makedirs(out_lbl_dir, exist_ok=True)
 
@@ -103,4 +103,13 @@ def split_image_into_n_power4(image_name, n):
             count += 1
 
 # Example usage for a 16-way split (4x4 grid)
-split_image_into_n_power4('hurricane-florence_00000006_post_disaster', 16)
+#split_image_into_n_power4('hurricane-florence_00000006_post_disaster', 16)
+
+images_to_split = f"X_View/datasets/data/train/images/"
+
+with os.scandir(images_to_split) as files:
+    for file in files:
+        img_name = file.name[:-4]
+        split_image_into_n_power4(img_name, 16)
+
+            
