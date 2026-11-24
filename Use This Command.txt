@@ -1,5 +1,0 @@
-Step 1:
-pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --timeout=1000 --ignore-installed tbb
-
-Step 2:
-pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --timeout=1000 -r requirements.txt
