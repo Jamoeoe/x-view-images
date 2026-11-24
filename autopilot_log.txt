@@ -1,0 +1,21 @@
+[2026-11-22 22:14:46] === autopilot start, budget 19.0 h, deadline Mon 17:14, baseline v8s_xbd = 0.2844 ===
+[2026-11-22 22:14:46] START v8m_xbd: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name v8m_xbd --model yolov8m.pt
+[2026-11-22 22:15:16] v8m_xbd training exit code 2 after 0.0 h
+[2026-11-22 22:15:16] v8m_xbd: no best.pt found - skipping evaluation
+[2026-11-22 22:15:16] START v8s_xbd_flip: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name v8s_xbd_flip --model yolov8s.pt --flipud 0.5
+[2026-11-22 22:15:46] v8s_xbd_flip training exit code 2 after 0.0 h
+[2026-11-22 22:15:46] v8s_xbd_flip: no best.pt found - skipping evaluation
+[2026-11-22 22:15:46] Stage 1 results: medium=None, flips=None, baseline=0.2844 -> size_helps=False, flip_helps=False
+[2026-11-22 22:15:46] START y11s_xbd: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name y11s_xbd --model yolo11s.pt
+[2026-11-22 22:16:52] === autopilot start, budget 19.0 h, deadline Mon 17:16, baseline v8s_xbd = 0.2844 ===
+[2026-11-22 22:16:52] START v8m_xbd: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name v8m_xbd --model yolov8m.pt
+[2026-11-23 04:29:22] v8m_xbd training exit code 0 after 6.2 h
+[2026-11-23 04:30:16] v8m_xbd: evaluate exit code 0, damage_mAP50 = 0.2884
+[2026-11-23 04:30:16] START v8s_xbd_flip: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name v8s_xbd_flip --model yolov8s.pt --flipud 0.5
+[2026-11-23 05:51:46] v8s_xbd_flip training exit code 0 after 1.4 h
+[2026-11-23 05:52:26] v8s_xbd_flip: evaluate exit code 0, damage_mAP50 = 0.2722
+[2026-11-23 05:52:26] Stage 1 results: medium=0.2884, flips=0.2722, baseline=0.2844 -> size_helps=False, flip_helps=False
+[2026-11-23 05:52:26] START y11s_xbd: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name y11s_xbd --model yolo11s.pt
+[2026-11-23 07:36:26] y11s_xbd training exit code 0 after 1.7 h
+[2026-11-23 07:37:13] y11s_xbd: evaluate exit code 0, damage_mAP50 = 0.2846
+[2026-11-23 07:37:13] START y11m_xbd: train.py --data X_View/datasets/data/data_xbd.yaml --epochs 100 --patience 30 --name y11m_xbd --model yolo11m.pt

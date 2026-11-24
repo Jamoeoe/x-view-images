@@ -1,3 +1,10 @@
 X_View/datasets/data/Xview_mods/*/weights/last.pt
 X_View/datasets/data/train/*
 runs/*
+
+map_data/
+tweets/
+__pycache__/
+/yolo*.pt
+X_View/datasets/data/clf_runs/post_r18/
+X_View/datasets/data/Xview_mods/y11m_xbd/

@@ -1,0 +1,57 @@
+{
+  "confusion": [
+    [
+      5467,
+      838,
+      474,
+      154
+    ],
+    [
+      670,
+      1779,
+      658,
+      162
+    ],
+    [
+      216,
+      389,
+      1852,
+      137
+    ],
+    [
+      55,
+      103,
+      78,
+      459
+    ]
+  ],
+  "accuracy": 0.7083981913868505,
+  "P_no_damage": 0.8531523096129837,
+  "R_no_damage": 0.788547526323381,
+  "F1_no_damage": 0.8195787422232218,
+  "P_minor_damage": 0.5722097137343197,
+  "R_minor_damage": 0.5442031202202509,
+  "F1_minor_damage": 0.5578551269990593,
+  "P_major_damage": 0.6048334421946441,
+  "R_major_damage": 0.7139552814186585,
+  "F1_major_damage": 0.654879773691655,
+  "P_destroyed": 0.5032894736842105,
+  "R_destroyed": 0.660431654676259,
+  "F1_destroyed": 0.5712507778469197,
+  "macro_F1": 0.650891105190214,
+  "harmonic_F1": 0.6359035985961837,
+  "bld_critical_AUROC": 0.8981115370399654,
+  "bld_critical_AP": 0.789773964717644,
+  "bld_critical_P": 0.6481865284974093,
+  "bld_critical_R": 0.760717543326239,
+  "bld_critical_F1": 0.6999580360889635,
+  "grid_critical_AUROC": 0.8867375366568915,
+  "grid_critical_AP": 0.872085367697902,
+  "grid_critical_P": 0.6965579710144928,
+  "grid_critical_R": 0.8859447004608295,
+  "grid_critical_F1": 0.7799188640973631,
+  "grid_cells_with_buildings": 1968,
+  "best_epoch": 8,
+  "train_minutes": 20.9,
+  "pretrained": true
+}

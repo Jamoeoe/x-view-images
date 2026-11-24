@@ -28,12 +28,18 @@ FOLDER_LOC = "X_View/datasets/data/"
 
 def parse_args():
     ap = argparse.ArgumentParser(description="Train YOLO on xView2 damage data")
+    ap.add_argument("--data", default=YAML_LOC,
+                    help="dataset yaml (e.g. X_View/datasets/data/data_xbd.yaml for the extra xBD images)")
     ap.add_argument("--model", default="yolov8n.pt", help="starting weights / model name")
     ap.add_argument("--epochs", type=int, default=3)
     ap.add_argument("--imgsz", type=int, default=1024)
     ap.add_argument("--batch", type=int, default=16, help="-1 = auto-fit to GPU memory")
     ap.add_argument("--name", default="Trial", help="output folder name under Xview_mods/")
     ap.add_argument("--device", default=None, help="'cuda', 'cpu', '0'...; default auto")
+    ap.add_argument("--patience", type=int, default=100,
+                    help="stop early if val mAP50-95 hasn't improved for this many epochs")
+    ap.add_argument("--flipud", type=float, default=0.0,
+                    help="probability of vertical flip augmentation (0.5 suits satellite images)")
     ap.add_argument("--predict", action="store_true",
                     help="after training, run the notebook's prediction step on val images")
     ap.add_argument("--conf", type=float, default=0.25, help="prediction confidence (with --predict)")
@@ -55,7 +61,8 @@ def main():
     ssl._create_default_https_context = ssl._create_unverified_context
     model = YOLO(args.model)
 
-    full_path = os.path.join(cwd, YAML_LOC)
+    full_path = os.path.join(cwd, args.data)
+    print(f"Dataset: {full_path}")
     project_path = os.path.join(cwd, FOLDER_LOC)
 
     # ---------------- Training ---------------- #
@@ -67,6 +74,8 @@ def main():
         device=device,
         imgsz=args.imgsz,
         batch=args.batch,
+        patience=args.patience,
+        flipud=args.flipud,
     )
 
     # Ultralytics adds -2, -3... if the folder already exists, so use the real path

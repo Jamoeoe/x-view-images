@@ -1,0 +1,131 @@
+[2026-11-23 15:49:06] ##### damage_classifier start (SMOKE TEST) variants=post_r34,prepost_r34,prepost_r50
+[2026-11-23 15:49:06] 28 image pairs, 1417 buildings -> crop cache 0.1 GB at ..\xbd_crops\smoke\crops_96.npy
+[2026-11-23 15:49:08] Crops done: 1417 buildings in 2s (0 images skipped)
+[2026-11-23 15:49:11] === post_r18: resnet18, channels [0, 1, 2, 6], 1152 train / 265 val buildings, device cuda
+[2026-11-23 15:49:11]   train class counts {'no_damage': 774, 'minor_damage': 223, 'major_damage': 89, 'destroyed': 66}
+[2026-11-23 15:50:12]   ep  1/1 loss 1.581 | acc 0.615 macroF1 0.310 | F1 no/minor/major/destroyed 0.69/0.55/0.00/0.00
+[2026-11-23 15:50:12]   BEST post_r18 (epoch 1): macroF1 0.310, harmonicF1 0.000, destroyed F1 0.000, grid critical AUROC 0.513 P/R 0.00/0.00  (1 min)
+[2026-11-23 15:50:12]   confusion (rows=true no/minor/major/destroyed, cols=pred):
+         103     45      0      0
+          44     60      0      0
+           2     10      0      0
+           0      1      0      0
+[2026-11-23 15:50:12] ##### damage_classifier finished
+[2026-11-23 15:51:43] ##### damage_classifier start  variants=post_r34,prepost_r34,prepost_r50
+[2026-11-23 15:51:49] 1150 image pairs, 64442 buildings -> crop cache 4.2 GB at ..\xbd_crops\full\crops_96.npy
+[2026-11-23 15:51:54]   cropped 100/1150 images (11s)
+[2026-11-23 15:51:58]   cropped 200/1150 images (15s)
+[2026-11-23 15:52:02]   cropped 300/1150 images (19s)
+[2026-11-23 15:52:09]   cropped 400/1150 images (26s)
+[2026-11-23 15:52:14]   cropped 500/1150 images (31s)
+[2026-11-23 15:52:22]   cropped 600/1150 images (39s)
+[2026-11-23 15:52:28]   cropped 700/1150 images (45s)
+[2026-11-23 15:52:32]   cropped 800/1150 images (49s)
+[2026-11-23 15:52:38]   cropped 900/1150 images (55s)
+[2026-11-23 15:52:44]   cropped 1000/1150 images (61s)
+[2026-11-23 15:52:51]   cropped 1100/1150 images (68s)
+[2026-11-23 15:52:56] Crops done: 64442 buildings in 73s (0 images skipped)
+[2026-11-23 15:52:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:02:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:12:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:22:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:32:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:42:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 16:52:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:02:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:12:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:22:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:32:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:42:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 17:52:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 18:02:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 18:12:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 18:22:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 18:32:56] Waiting for autopilot to finish (checking every minute)...
+[2026-11-23 18:33:57] ##### damage_classifier start  variants=post_r34,prepost_r34,prepost_r50
+[2026-11-23 18:33:57] Reusing crop cache ..\xbd_crops\full\crops_96.npy (64442 buildings)
+[2026-11-23 18:33:58] === post_r34: resnet34, channels [0, 1, 2, 6], 50951 train / 13491 val buildings, device cuda
+[2026-11-23 18:33:58]   train class counts {'no_damage': 26272, 'minor_damage': 11281, 'major_damage': 10736, 'destroyed': 2662}
+[2026-11-23 18:35:21]   ep  1/20 loss 1.082 | acc 0.626 macroF1 0.570 | F1 no/minor/major/destroyed 0.74/0.49/0.56/0.49
+[2026-11-23 18:36:04]   ep  2/20 loss 0.919 | acc 0.703 macroF1 0.630 | F1 no/minor/major/destroyed 0.82/0.54/0.62/0.54
+[2026-11-23 18:36:47]   ep  3/20 loss 0.882 | acc 0.705 macroF1 0.627 | F1 no/minor/major/destroyed 0.84/0.53/0.61/0.52
+[2026-11-23 18:37:30]   ep  4/20 loss 0.851 | acc 0.700 macroF1 0.618 | F1 no/minor/major/destroyed 0.83/0.49/0.62/0.53
+[2026-11-23 18:38:11]   ep  5/20 loss 0.827 | acc 0.708 macroF1 0.632 | F1 no/minor/major/destroyed 0.84/0.56/0.57/0.55
+[2026-11-23 18:38:54]   ep  6/20 loss 0.804 | acc 0.680 macroF1 0.619 | F1 no/minor/major/destroyed 0.81/0.53/0.59/0.55
+[2026-11-23 18:39:36]   ep  7/20 loss 0.788 | acc 0.699 macroF1 0.613 | F1 no/minor/major/destroyed 0.82/0.57/0.54/0.52
+[2026-11-23 18:40:18]   ep  8/20 loss 0.771 | acc 0.682 macroF1 0.614 | F1 no/minor/major/destroyed 0.81/0.51/0.60/0.53
+[2026-11-23 18:41:01]   ep  9/20 loss 0.757 | acc 0.717 macroF1 0.640 | F1 no/minor/major/destroyed 0.85/0.54/0.62/0.55
+[2026-11-23 18:41:43]   ep 10/20 loss 0.731 | acc 0.676 macroF1 0.621 | F1 no/minor/major/destroyed 0.81/0.52/0.62/0.54
+[2026-11-23 18:42:25]   ep 11/20 loss 0.714 | acc 0.669 macroF1 0.614 | F1 no/minor/major/destroyed 0.80/0.51/0.58/0.57
+[2026-11-23 18:43:07]   ep 12/20 loss 0.691 | acc 0.710 macroF1 0.639 | F1 no/minor/major/destroyed 0.85/0.51/0.63/0.57
+[2026-11-23 18:43:50]   ep 13/20 loss 0.662 | acc 0.687 macroF1 0.626 | F1 no/minor/major/destroyed 0.82/0.52/0.61/0.56
+[2026-11-23 18:44:32]   ep 14/20 loss 0.637 | acc 0.703 macroF1 0.644 | F1 no/minor/major/destroyed 0.83/0.53/0.64/0.58
+[2026-11-23 18:45:15]   ep 15/20 loss 0.606 | acc 0.714 macroF1 0.642 | F1 no/minor/major/destroyed 0.85/0.53/0.62/0.57
+[2026-11-23 18:45:57]   ep 16/20 loss 0.569 | acc 0.704 macroF1 0.644 | F1 no/minor/major/destroyed 0.83/0.55/0.63/0.57
+[2026-11-23 18:46:39]   ep 17/20 loss 0.538 | acc 0.709 macroF1 0.646 | F1 no/minor/major/destroyed 0.84/0.54/0.62/0.59
+[2026-11-23 18:47:22]   ep 18/20 loss 0.508 | acc 0.709 macroF1 0.644 | F1 no/minor/major/destroyed 0.84/0.53/0.63/0.58
+[2026-11-23 18:48:04]   ep 19/20 loss 0.491 | acc 0.711 macroF1 0.646 | F1 no/minor/major/destroyed 0.84/0.53/0.63/0.58
+[2026-11-23 18:48:46]   ep 20/20 loss 0.480 | acc 0.713 macroF1 0.648 | F1 no/minor/major/destroyed 0.84/0.53/0.63/0.59
+[2026-11-23 18:48:46]   BEST post_r34 (epoch 20): macroF1 0.648, harmonicF1 0.630, destroyed F1 0.587, grid critical AUROC 0.895 P/R 0.77/0.83  (15 min)
+[2026-11-23 18:48:46]   confusion (rows=true no/minor/major/destroyed, cols=pred):
+        5803    858    202     70
+         710   1729    731     99
+         305    508   1684     97
+          58    103    135    399
+[2026-11-23 18:48:46] === prepost_r34: resnet34, channels [0, 1, 2, 3, 4, 5, 6], 50951 train / 13491 val buildings, device cuda
+[2026-11-23 18:48:46]   train class counts {'no_damage': 26272, 'minor_damage': 11281, 'major_damage': 10736, 'destroyed': 2662}
+[2026-11-23 18:49:33]   ep  1/20 loss 1.161 | acc 0.633 macroF1 0.559 | F1 no/minor/major/destroyed 0.77/0.49/0.49/0.49
+[2026-11-23 18:50:16]   ep  2/20 loss 0.974 | acc 0.638 macroF1 0.576 | F1 no/minor/major/destroyed 0.77/0.50/0.59/0.45
+[2026-11-23 18:51:00]   ep  3/20 loss 0.912 | acc 0.676 macroF1 0.613 | F1 no/minor/major/destroyed 0.80/0.54/0.62/0.49
+[2026-11-23 18:51:43]   ep  4/20 loss 0.871 | acc 0.690 macroF1 0.618 | F1 no/minor/major/destroyed 0.82/0.52/0.61/0.52
+[2026-11-23 18:52:27]   ep  5/20 loss 0.846 | acc 0.701 macroF1 0.626 | F1 no/minor/major/destroyed 0.83/0.53/0.57/0.57
+[2026-11-23 18:53:10]   ep  6/20 loss 0.820 | acc 0.722 macroF1 0.641 | F1 no/minor/major/destroyed 0.85/0.52/0.65/0.55
+[2026-11-23 18:53:54]   ep  7/20 loss 0.801 | acc 0.719 macroF1 0.642 | F1 no/minor/major/destroyed 0.85/0.55/0.62/0.56
+[2026-11-23 18:54:37]   ep  8/20 loss 0.782 | acc 0.711 macroF1 0.640 | F1 no/minor/major/destroyed 0.84/0.52/0.64/0.56
+[2026-11-23 18:55:21]   ep  9/20 loss 0.767 | acc 0.696 macroF1 0.637 | F1 no/minor/major/destroyed 0.82/0.53/0.63/0.57
+[2026-11-23 18:56:04]   ep 10/20 loss 0.747 | acc 0.730 macroF1 0.664 | F1 no/minor/major/destroyed 0.85/0.55/0.65/0.61
+[2026-11-23 18:56:47]   ep 11/20 loss 0.726 | acc 0.727 macroF1 0.660 | F1 no/minor/major/destroyed 0.85/0.55/0.63/0.60
+[2026-11-23 18:57:33]   ep 12/20 loss 0.706 | acc 0.722 macroF1 0.656 | F1 no/minor/major/destroyed 0.85/0.55/0.64/0.59
+[2026-11-23 18:58:18]   ep 13/20 loss 0.676 | acc 0.702 macroF1 0.641 | F1 no/minor/major/destroyed 0.83/0.53/0.64/0.56
+[2026-11-23 18:59:03]   ep 14/20 loss 0.650 | acc 0.725 macroF1 0.650 | F1 no/minor/major/destroyed 0.85/0.56/0.66/0.53
+[2026-11-23 18:59:47]   ep 15/20 loss 0.618 | acc 0.724 macroF1 0.652 | F1 no/minor/major/destroyed 0.85/0.55/0.65/0.56
+[2026-11-23 19:00:30]   ep 16/20 loss 0.581 | acc 0.722 macroF1 0.657 | F1 no/minor/major/destroyed 0.84/0.55/0.66/0.57
+[2026-11-23 19:01:14]   ep 17/20 loss 0.551 | acc 0.718 macroF1 0.650 | F1 no/minor/major/destroyed 0.84/0.54/0.65/0.56
+[2026-11-23 19:01:59]   ep 18/20 loss 0.520 | acc 0.724 macroF1 0.656 | F1 no/minor/major/destroyed 0.85/0.55/0.65/0.57
+[2026-11-23 19:02:45]   ep 19/20 loss 0.503 | acc 0.725 macroF1 0.657 | F1 no/minor/major/destroyed 0.85/0.55/0.65/0.57
+[2026-11-23 19:03:30]   ep 20/20 loss 0.492 | acc 0.725 macroF1 0.656 | F1 no/minor/major/destroyed 0.85/0.55/0.65/0.57
+[2026-11-23 19:03:30]   BEST prepost_r34 (epoch 10): macroF1 0.664, harmonicF1 0.646, destroyed F1 0.605, grid critical AUROC 0.885 P/R 0.75/0.81  (15 min)
+[2026-11-23 19:03:30]   confusion (rows=true no/minor/major/destroyed, cols=pred):
+        5995    634    217     87
+         756   1696    695    122
+         332    439   1711    112
+          53    126     75    441
+[2026-11-23 19:03:31] === prepost_r50: resnet50, channels [0, 1, 2, 3, 4, 5, 6], 50951 train / 13491 val buildings, device cuda
+[2026-11-23 19:03:31]   train class counts {'no_damage': 26272, 'minor_damage': 11281, 'major_damage': 10736, 'destroyed': 2662}
+[2026-11-23 19:05:23]   ep  1/20 loss 1.210 | acc 0.606 macroF1 0.553 | F1 no/minor/major/destroyed 0.73/0.48/0.49/0.52
+[2026-11-23 19:06:24]   ep  2/20 loss 0.967 | acc 0.651 macroF1 0.549 | F1 no/minor/major/destroyed 0.79/0.50/0.37/0.54
+[2026-11-23 19:07:24]   ep  3/20 loss 0.886 | acc 0.658 macroF1 0.602 | F1 no/minor/major/destroyed 0.79/0.52/0.58/0.53
+[2026-11-23 19:08:25]   ep  4/20 loss 0.834 | acc 0.682 macroF1 0.615 | F1 no/minor/major/destroyed 0.82/0.53/0.56/0.55
+[2026-11-23 19:09:25]   ep  5/20 loss 0.797 | acc 0.709 macroF1 0.639 | F1 no/minor/major/destroyed 0.84/0.54/0.61/0.57
+[2026-11-23 19:10:26]   ep  6/20 loss 0.772 | acc 0.705 macroF1 0.630 | F1 no/minor/major/destroyed 0.83/0.52/0.59/0.58
+[2026-11-23 19:11:26]   ep  7/20 loss 0.739 | acc 0.699 macroF1 0.615 | F1 no/minor/major/destroyed 0.84/0.50/0.57/0.55
+[2026-11-23 19:12:27]   ep  8/20 loss 0.712 | acc 0.708 macroF1 0.651 | F1 no/minor/major/destroyed 0.82/0.56/0.65/0.57
+[2026-11-23 19:13:27]   ep  9/20 loss 0.688 | acc 0.694 macroF1 0.633 | F1 no/minor/major/destroyed 0.82/0.53/0.64/0.54
+[2026-11-23 19:14:28]   ep 10/20 loss 0.648 | acc 0.683 macroF1 0.620 | F1 no/minor/major/destroyed 0.82/0.51/0.61/0.54
+[2026-11-23 19:15:29]   ep 11/20 loss 0.609 | acc 0.691 macroF1 0.627 | F1 no/minor/major/destroyed 0.83/0.47/0.62/0.59
+[2026-11-23 19:16:29]   ep 12/20 loss 0.569 | acc 0.713 macroF1 0.635 | F1 no/minor/major/destroyed 0.85/0.53/0.60/0.56
+[2026-11-23 19:17:30]   ep 13/20 loss 0.520 | acc 0.706 macroF1 0.642 | F1 no/minor/major/destroyed 0.83/0.54/0.63/0.57
+[2026-11-23 19:18:31]   ep 14/20 loss 0.477 | acc 0.709 macroF1 0.637 | F1 no/minor/major/destroyed 0.84/0.53/0.64/0.55
+[2026-11-23 19:19:31]   ep 15/20 loss 0.429 | acc 0.706 macroF1 0.634 | F1 no/minor/major/destroyed 0.84/0.51/0.63/0.56
+[2026-11-23 19:20:32]   ep 16/20 loss 0.393 | acc 0.710 macroF1 0.641 | F1 no/minor/major/destroyed 0.84/0.53/0.64/0.56
+[2026-11-23 19:21:32]   ep 17/20 loss 0.363 | acc 0.713 macroF1 0.645 | F1 no/minor/major/destroyed 0.84/0.53/0.64/0.57
+[2026-11-23 19:22:33]   ep 18/20 loss 0.343 | acc 0.717 macroF1 0.646 | F1 no/minor/major/destroyed 0.84/0.54/0.64/0.56
+[2026-11-23 19:23:33]   ep 19/20 loss 0.331 | acc 0.713 macroF1 0.641 | F1 no/minor/major/destroyed 0.84/0.53/0.64/0.56
+[2026-11-23 19:24:34]   ep 20/20 loss 0.326 | acc 0.712 macroF1 0.640 | F1 no/minor/major/destroyed 0.84/0.53/0.64/0.56
+[2026-11-23 19:24:34]   BEST prepost_r50 (epoch 8): macroF1 0.651, harmonicF1 0.636, destroyed F1 0.571, grid critical AUROC 0.887 P/R 0.70/0.89  (21 min)
+[2026-11-23 19:24:34]   confusion (rows=true no/minor/major/destroyed, cols=pred):
+        5467    838    474    154
+         670   1779    658    162
+         216    389   1852    137
+          55    103     78    459
+[2026-11-23 19:24:34] ##### damage_classifier finished
