@@ -2,5 +2,4 @@ train_images_labels_targets/*
 runs/*
 data/*
 .venv
-train_images_labels_targets.tar.tar
 __pycache__
