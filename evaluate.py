@@ -79,7 +79,8 @@ def load_dataset(data_yaml: Path, split: str):
 
     resolved = {
         "path": str(root),
-        "train": str(root / cfg["train"]) if cfg.get("train") else None,
+        # train isn't used for scoring; a list (e.g. data_xbd.yaml) is fine too
+        "train": str(root / cfg["train"]) if isinstance(cfg.get("train"), str) else str(root / split_rel),
         "val": str(root / split_rel),   # ultralytics val reads the 'val' key
         "nc": len(names),
         "names": names,

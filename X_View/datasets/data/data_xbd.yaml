@@ -1,0 +1,12 @@
+path: ./X_View/
+train:
+- ./datasets/data/train/images
+- ./datasets/data/train/xbd/images
+val: ./datasets/data/val/images
+nc: 5
+names:
+- unclassified
+- no_damage
+- minor_damage
+- major_damage
+- destroyed
