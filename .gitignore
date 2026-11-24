@@ -1,3 +1,6 @@
-X_View/datasets/data/Xview_mods/*/weights/last.pt
-X_View/datasets/data/train/*
+train_images_labels_targets/*
 runs/*
+data/*
+.venv
+train_images_labels_targets.tar.tar
+__pycache__
