@@ -121,4 +121,4 @@ if __name__ == "__main__":
     main()
 
 
-# .venv/bin/python extract_labels.py hurricane-florence_00000032 --phase post --out features.csv
+# .venv/bin/python extract_labels.py hurricane-florence_00000032 --phase pre --out features.csv
