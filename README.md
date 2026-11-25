@@ -1,0 +1,3 @@
+Unzip train_images_labels_targets into top level folder
+run gen_sample_data
+run train_resnet34
