@@ -2,3 +2,5 @@ train_images_labels_targets/*
 data/*
 .venv
 __pycache__
+runs/resnet34/predictions.csv
+runs/resnet34_eval/predictions.csv
